@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First Number :"
+       android:hint="hi"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:id="@+id/text1"
+         />
+    <EditText
+        android:layout_width="250dp"
+        android:id="@+id/ed1"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Second Number :"
+        android:layout_below="@id/text1"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        />
+    <EditText
+        android:id="@+id/ed2"
+        android:layout_width="240dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text1"
+        android:layout_marginLeft="160dp"
+        />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="add"
+            android:textColor="#ffffff"
+            android:id="@+id/btnAdd"
+            android:onClick="methodAdd"
+            android:background="@drawable/sk"
+            android:layout_below="@id/ed2"
+            android:layout_marginTop="60dp"
+            tools:ignore="OnClick" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:text="Result:"
+        android:id="@+id/text3"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textSize="22sp"
+        android:layout_below="@id/ed2"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/text4"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="80dp"
+        android:textSize="22sp"
+        android:layout_below="@id/ed2"/>
+</RelativeLayout>
